@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jokenpô</title>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Pedra Papel e Tesoura</h1>
+    </header>  
+
+    <main class='conteudo-principal'>
+       <h3 class="titulo-jogador1"> Jogador 1</h3>
+    <section class="jogador1">
+        <form name="button-select">
+            <input type="radio" name='grupo' id="pedra">
+              <img src="pedra.png">
+            <input type="radio" name='grupo' id="papel">
+              <img src="papel.png">
+            <input type="radio" name='grupo' id="tesoura">
+              <img src="tesoura.png"> 
+        </form>
+        
+    </section>
+    <h3 class="titulo-jogador2"> Jogador 2</h3>
+    <section class="jogador2">
+        <form name="button-select">
+            <input type="radio" name='grupo' id="pedra">
+              <img src="pedra.png">
+            <input type="radio" name='grupo' id="papel">
+              <img src="papel.png">
+            <input type="radio" name='grupo' id="tesoura">
+              <img src="tesoura.png"> 
+        </form>
+    </section>
+</main>
+    <div class="bt-container">
+        <input type="button" value="Play" onclick="jogar()"></input>
+        <input type="reset" value="Jogar Novamente" onclick="resetar()"></input>
+
+    </div>
+    <div class="result" id='resultado'></div>
+
+    <script src="jokenpo.js"></script>
+    
+</body>
+</html>
