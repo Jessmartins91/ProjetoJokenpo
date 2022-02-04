@@ -14,11 +14,11 @@
        <h3 class="titulo-jogador1"> Jogador 1</h3>
     <section class="jogador1">
         <form name="button-select">
-            <input type="radio" name='grupo' id="pedra">
+            <input type="radio" name='grupo' id="pedra1" onclick="jogar()">
               <img src="pedra.png">
-            <input type="radio" name='grupo' id="papel">
+            <input type="radio" name='grupo' id="papel1" onclick="jogar()">
               <img src="papel.png">
-            <input type="radio" name='grupo' id="tesoura">
+            <input type="radio" name='grupo' id="tesoura1" onclick="jogar()">
               <img src="tesoura.png"> 
         </form>
         
@@ -26,18 +26,17 @@
     <h3 class="titulo-jogador2"> Jogador 2</h3>
     <section class="jogador2">
         <form name="button-select">
-            <input type="radio" name='grupo' id="pedra">
+            <input type="radio" name='grupo' id="pedra2" onclick="jogar()">
               <img src="pedra.png">
-            <input type="radio" name='grupo' id="papel">
+            <input type="radio" name='grupo' id="papel2" onclick="jogar()">
               <img src="papel.png">
-            <input type="radio" name='grupo' id="tesoura">
+            <input type="radio" name='grupo' id="tesoura2" onclick="jogar()">
               <img src="tesoura.png"> 
         </form>
     </section>
 </main>
     <div class="bt-container">
-        <input type="button" value="Play" onclick="jogar()"></input>
-        <input type="reset" value="Jogar Novamente" onclick="resetar()"></input>
+        <button onClick="window.location.reload();">Jogar Novamente </button>
 
     </div>
     <div class="result" id='resultado'></div>
